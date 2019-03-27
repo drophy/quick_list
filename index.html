@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Quick Todo List</title>
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+      <!-- Master CSS -->
+      <link rel="stylesheet" href="assets/css/todos.css">
+      <!-- jQuery -->
+      <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+   </head>
+   <body>
+      <!-- List -->
+      <div class="container">
+         <h2>To-Do List<i class="far fa-trash-alt"></i><i class="far fa-edit"></i></h2>
+         <input id="text_input" type="text" placeholder="Add New Todo">
+         <ul>
+            <li><span><i class="fas fa-minus-circle"></i></span>Finish Night Mode</li>
+            <li><span><i class="fas fa-minus-circle"></i></span>Fix new items in night mode</li>
+            <li><span><i class="fas fa-minus-circle"></i></span>Fix HTML's height and theme form not updating when too many elements</li>
+            <li><span><i class="fas fa-minus-circle"></i></span>Add Firefox and other prefixes</li>
+         </ul>
+      </div>
+      <!-- Background Color -->
+      <form>
+         Theme:
+         <input type="radio" name="theme" value="plain" checked> Plain
+         <input type="radio" name="theme" value="day"> Day
+         <input type="radio" name="theme" value="night"> Night
+      </form>
+      <!-- Master JS -->
+      <script src="assets/js/todos.js"></script>
+   </body>
+</html>

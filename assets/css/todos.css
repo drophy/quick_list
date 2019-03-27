@@ -1,0 +1,171 @@
+/*
+   #f7f7f7; // container background
+   rgb(57, 156, 255); h2 background
+   #505050; // text color
+   rgb(174, 183, 189); // completed text color
+*/
+
+/* Existing elements */
+html
+{
+   height: 100%;
+}
+
+body
+{
+   font-family: 'Noto Sans', sans-serif;
+   color: #505050;
+}
+
+.container
+{
+   width: 360px; /*just a size chosen by Colt*/
+   margin: 100px auto 0 auto; /*centers the div*/
+   background: #f7f7f7;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2
+{
+   margin: 0;
+   padding: 10px 13px 10px 20px;
+   background-color: rgb(57, 156, 255);
+   color: #FFFFFF;
+   font-weight: normal;
+}
+
+.fa-trash-alt, .fa-edit
+{
+   margin: 0 5px 0 5px;
+   float: right;
+   line-height: 32px;
+}
+
+input[type=text]
+{
+   height: 40px;
+   width: 100%;
+   box-sizing: border-box;
+   /*INCLUDE PREFIXES FOR FIREFOX*/
+   /*so that h and w will remain no matter the border and padding*/
+   border: none;
+   background-color: #f7f7f7;
+
+   padding: 13px 13px 13px 20px;
+   font-size: 18px;
+   color: rgb(57, 156, 255);
+}
+
+input[type=text]:focus
+{
+   /* background-color: #ffffff;
+   border: 1px solid #f7f7f7; */
+   outline: none;
+}
+
+ul
+{
+   list-style: none; /*removes bulletpoints*/
+   margin: 0;
+   padding-left: 0px;
+}
+
+li
+{
+   /* height: 40px; */
+   height: auto;
+   line-height: 40px;
+   padding: 0 13px 0 20px;
+}
+
+li:nth-of-type(2n+1)
+{
+   background: #ffffff;
+}
+
+span
+{
+   width: 0px;
+   height: 100%;
+   display: inline-block;
+
+   /*Text (well, icon)*/
+   color: #e74c3c;
+   opacity: 0; /*so you can't see it when it's not shown*/
+
+   transition: 0.2s linear;
+}
+
+.deleteMode
+{
+   width: 30px;
+   opacity: 100;
+}
+
+form
+{
+   position: absolute; bottom: 20px; right: 13px;
+   float: right;
+}
+
+/* Toggleable classes */
+.day
+{
+   /*https://uigradients.com/#CoolSky*/
+   /*Note: Mango seemed like a decent alternative*/
+
+   /* fallback for old browsers */
+   background: #2980B9;
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* background: linear-gradient(to top, #957e12, #6DD5FA, #2980B9); */
+   background: linear-gradient(to top, rgb(207, 95, 16), rgb(255, 203, 122), #2980B9);
+}
+
+.night
+{
+   /*https://uigradients.com/#RedSunset*/
+
+   /* fallback for old browsers */
+   background: #355C7D;
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to top, #C06C84, #6C5B7B, #355C7D);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to top, #C06C84, #6C5B7B, #355C7D);
+}
+
+.h2_dark
+{
+   background-color: rgb(16, 8, 87);
+   color: #f7f7f7;
+}
+
+.input_text_dark
+{
+   background-color: #606060;
+   color: #ffffff;
+}
+
+.li_dark
+{
+   background-color: #686868;
+   color: #f7f7f7;
+}
+
+.li_dark_alt /*not working atm; it did when I had .li_light_alt, but that wouldn't update the colors when an element was removed*/
+{
+   background-color: #606060;
+   color: #f7f7f7;
+}
+
+.span_dark
+{
+   color: #C06C84;
+}
+
+.completed
+{
+   color: #aeb7bd;
+   text-decoration: line-through;
+}

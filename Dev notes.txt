@@ -1,0 +1,16 @@
+IDEAS
+> Make it so you can bring back checked off todos (in case you click the wrong one)
+> Even when deleted, save them somewhere (say, with a history button or just as a console.log)
+> Add a mark as important feature
+> Make it so they can be reordered (by dragging would be great)
+> Add a "Nothing here! :)" default item when list is empty (must go away when an item appears)
+
+INCOMPLETE
+> Night mode: I wanted to change the list's colors too, but it proved problematic (see issues section). At least try changing the input's text color, for the bright blue looks off
+> Create README file explaining the instructions
+
+ISSUES
+> The remove button can kinda still be clicked even when it's not visible (this shouldn't happen w/o pressing the trash button)
+> When the todo is too long, it can't take another row (I tried using min-height instead, but this breaks the slideUp animation which I really like :c). Edit: Solved; leaving it at auto seemed to work. Not sure of whether it's staying with h = 40 because of line-height.
+> When the items exceed the page, it breaks (the HTML's height and the theme form stay in the same place). Edit: The body's size does change, so maybe move the form to the top when the body exceeds certain size?
+> When trying to have the list elements in a different color toggling a class: New items in night mode keep their original gray color; you had to select the Night theme again for them to update at the moment
